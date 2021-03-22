@@ -4,11 +4,12 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInitf24f3233a5134c5f883951f508aeffc0
+class ComposerStaticInit530f6920e5a60470a5dff07b6cc9fdf4
 {
     public static $files = array (
-        '320cde22f66dd4f5d3fd621d3e88b98f' => __DIR__ . '/..' . '/symfony/polyfill-ctype/bootstrap.php',
         'ec07570ca5a812141189b1fa81503674' => __DIR__ . '/..' . '/phpunit/phpunit/src/Framework/Assert/Functions.php',
+        '320cde22f66dd4f5d3fd621d3e88b98f' => __DIR__ . '/..' . '/symfony/polyfill-ctype/bootstrap.php',
+        '6e3fae29631ef280660b3cdad06f25a8' => __DIR__ . '/..' . '/symfony/deprecation-contracts/function.php',
         '6124b4c8570aa390c21fafd04a26c69f' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/deep_copy.php',
     );
 
@@ -24,16 +25,30 @@ class ComposerStaticInitf24f3233a5134c5f883951f508aeffc0
         'S' => 
         array (
             'Symfony\\Polyfill\\Ctype\\' => 23,
+            'Symfony\\Component\\Yaml\\' => 23,
         ),
         'P' => 
         array (
             'Prophecy\\' => 9,
             'PhpParser\\' => 10,
         ),
+        'N' => 
+        array (
+            'Noodlehaus\\' => 11,
+        ),
         'D' => 
         array (
             'Doctrine\\Instantiator\\' => 22,
             'DeepCopy\\' => 9,
+        ),
+        'C' => 
+        array (
+            'Codedungeon\\PHPUnitPrettyResultPrinter\\' => 39,
+            'Codedungeon\\PHPCliColors\\' => 25,
+        ),
+        'B' => 
+        array (
+            'Bakyt\\' => 6,
         ),
     );
 
@@ -41,8 +56,8 @@ class ComposerStaticInitf24f3233a5134c5f883951f508aeffc0
         'phpDocumentor\\Reflection\\' => 
         array (
             0 => __DIR__ . '/..' . '/phpdocumentor/reflection-common/src',
-            1 => __DIR__ . '/..' . '/phpdocumentor/type-resolver/src',
-            2 => __DIR__ . '/..' . '/phpdocumentor/reflection-docblock/src',
+            1 => __DIR__ . '/..' . '/phpdocumentor/reflection-docblock/src',
+            2 => __DIR__ . '/..' . '/phpdocumentor/type-resolver/src',
         ),
         'Webmozart\\Assert\\' => 
         array (
@@ -52,6 +67,10 @@ class ComposerStaticInitf24f3233a5134c5f883951f508aeffc0
         array (
             0 => __DIR__ . '/..' . '/symfony/polyfill-ctype',
         ),
+        'Symfony\\Component\\Yaml\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/yaml',
+        ),
         'Prophecy\\' => 
         array (
             0 => __DIR__ . '/..' . '/phpspec/prophecy/src/Prophecy',
@@ -60,6 +79,10 @@ class ComposerStaticInitf24f3233a5134c5f883951f508aeffc0
         array (
             0 => __DIR__ . '/..' . '/nikic/php-parser/lib/PhpParser',
         ),
+        'Noodlehaus\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/hassankhan/config/src',
+        ),
         'Doctrine\\Instantiator\\' => 
         array (
             0 => __DIR__ . '/..' . '/doctrine/instantiator/src/Doctrine/Instantiator',
@@ -67,6 +90,18 @@ class ComposerStaticInitf24f3233a5134c5f883951f508aeffc0
         'DeepCopy\\' => 
         array (
             0 => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy',
+        ),
+        'Codedungeon\\PHPUnitPrettyResultPrinter\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/codedungeon/phpunit-result-printer/src',
+        ),
+        'Codedungeon\\PHPCliColors\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/codedungeon/php-cli-colors/src',
+        ),
+        'Bakyt\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/2bj/phanybar/src',
         ),
     );
 
@@ -700,9 +735,9 @@ class ComposerStaticInitf24f3233a5134c5f883951f508aeffc0
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInitf24f3233a5134c5f883951f508aeffc0::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInitf24f3233a5134c5f883951f508aeffc0::$prefixDirsPsr4;
-            $loader->classMap = ComposerStaticInitf24f3233a5134c5f883951f508aeffc0::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit530f6920e5a60470a5dff07b6cc9fdf4::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit530f6920e5a60470a5dff07b6cc9fdf4::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInit530f6920e5a60470a5dff07b6cc9fdf4::$classMap;
 
         }, null, ClassLoader::class);
     }

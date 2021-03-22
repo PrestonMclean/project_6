@@ -5,7 +5,7 @@ class ListingPremium extends ListingBasic
     protected $status = 'premium';
     protected $description;
     protected static $allowed_tags = '<p><br><b><strong><em><u><ol><ul><li>';
-    
+
     /**
      * Calls individual methods to set values for object properties.
      * @param array $data Data to set from user or database
@@ -16,7 +16,7 @@ class ListingPremium extends ListingBasic
             $this->setDescription($data['description']);
         }
     }
-    
+
     /**
      * Gets the local property $description
      * @return string
@@ -34,7 +34,7 @@ class ListingPremium extends ListingBasic
     {
         $this->description = trim(strip_tags($value, self::$allowed_tags));
     }
-    
+
     public static function displayAllowedTags()
     {
         return htmlspecialchars(self::$allowed_tags);

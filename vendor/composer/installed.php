@@ -11,6 +11,15 @@
   ),
   'versions' => 
   array (
+    '2bj/phanybar' => 
+    array (
+      'pretty_version' => 'v1.0.0',
+      'version' => '1.0.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '88ff671e18f30c2047a34f8cf2465a7ff93c819b',
+    ),
     '__root__' => 
     array (
       'pretty_version' => '1.0.0+no-version-set',
@@ -20,6 +29,24 @@
       ),
       'reference' => NULL,
     ),
+    'codedungeon/php-cli-colors' => 
+    array (
+      'pretty_version' => '1.12.2',
+      'version' => '1.12.2.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => 'e346156f75717140a3dd622124d2ec686aa7ff8e',
+    ),
+    'codedungeon/phpunit-result-printer' => 
+    array (
+      'pretty_version' => '0.30.1',
+      'version' => '0.30.1.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => 'a361009eeb7078c1478ba835976f7722a4952870',
+    ),
     'doctrine/instantiator' => 
     array (
       'pretty_version' => '1.4.0',
@@ -28,6 +55,15 @@
       array (
       ),
       'reference' => 'd56bf6102915de5702778fe20f2de3b2fe570b5b',
+    ),
+    'hassankhan/config' => 
+    array (
+      'pretty_version' => '2.2.0',
+      'version' => '2.2.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '62b0fd17540136efa94ab6b39f04044c6dc5e4a7',
     ),
     'myclabs/deep-copy' => 
     array (
@@ -303,6 +339,15 @@
       ),
       'reference' => 'c6c1022351a901512170118436c764e473f6de8c',
     ),
+    'symfony/deprecation-contracts' => 
+    array (
+      'pretty_version' => 'v2.2.0',
+      'version' => '2.2.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '5fa56b4074d1ae755beb55617ddafe6f5d78f665',
+    ),
     'symfony/polyfill-ctype' => 
     array (
       'pretty_version' => 'v1.22.1',
@@ -311,6 +356,15 @@
       array (
       ),
       'reference' => 'c6c942b1ac76c82448322025e084cadc56048b4e',
+    ),
+    'symfony/yaml' => 
+    array (
+      'pretty_version' => 'v5.2.5',
+      'version' => '5.2.5.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '298a08ddda623485208506fcee08817807a251dd',
     ),
     'theseer/tokenizer' => 
     array (
