@@ -4,6 +4,17 @@
   printerClass="Codedungeon\PHPUnitPrettyResultPrinter\Printer"
 >
 
+  <testsuites>
+    <testsuite name="test">
+      <directory>tests</directory>
+    </testsuite>
+  </testsuites>
+
+  <coverage>
+    <include>
+      <directory suffix=".php">classes</directory>
+    </include>
+  </coverage>
 
 
 </phpunit>
