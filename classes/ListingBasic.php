@@ -168,6 +168,29 @@ class ListingBasic
     }
 
     /**
+     * Gets the local property $id
+     * @return int
+     */
+    public function getImage()
+    {
+      if (empty($this->image)) {
+        return false;
+      } elseif ((substr($this->image, 0, 12)) === "https://www.") {
+        return ($this->image);
+      }
+      return ("//" . $this->image);
+    }
+
+    /**
+     * Cleans up and sets the local property $id
+     * @param int $value Data may be from database or user
+     */
+    public function setImage($value)
+    {
+      $this->image = $value;
+    }
+
+    /**
      * Convert the current object to an associative array of parameters
      * @return array of object parameters
      */
